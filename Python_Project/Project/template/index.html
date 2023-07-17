@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+    <style>
+        *{
+           
+        }
+        body {
+            height: 200hv;
+            width: 200px;
+            font-family: Arial, sans-serif;
+            margin-top: 196px;
+            border: solid;
+            padding:25px
+
+
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Music Player</h1>
+    <form method="post" action="/">
+        <label for="mood">Select your mood:</label>
+        <select name="mood" id="mood">
+            <option value="1">Happy</option>
+            <option value="2">Depression</option>
+            <option value="3">Alone</option>
+            <option value="4">Love</option>
+            <option value="5">Beast Mode</option>
+
+        </select>
+        <br><br>
+        <input type="submit" value="Play Song">
+    </form>
+</body>
+</html>
